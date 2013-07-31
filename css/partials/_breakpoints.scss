@@ -1,0 +1,240 @@
+// Media queries from bourbon neat mobilee first
+$media-queries-supported: true;
+
+$fg-column: 28px;             // Column Width
+$fg-gutter: 10px;             // Gutter Width
+$fg-padding: 13px;            // not apart of mixin
+$fg-max-columns:8;
+
+@include media-query-bp($bp1,max) {
+  #container{
+    width:100%;
+    max-width:100%;
+    background:#333;
+    margin:0 auto;
+    padding:0 $fg-padding;
+    @include box-sizing(border-box);
+
+  }
+
+  header{
+   width:flex-grid(8);
+   background:#efefef;
+   height:20px;
+  }
+
+
+  .grid{
+    display:none;
+  }
+  .mobGrid{
+    display:block;
+    .col{
+      display:block;
+      height:50px;
+      width:flex-grid(1);
+      margin-right:flex-gutter(8);
+      float:left;
+      background:red;
+      &:last-child{
+        margin-right:0 !important;
+      }
+    }
+  }
+}
+
+
+$fg-column: 48px;             // Column Width
+$fg-gutter: 10px;             // Gutter Width
+$fg-padding: 13px;            // not apart of mixin
+$fg-max-columns:8;
+
+@include media-query-bp($bp2,max) {
+  #container{
+    width:100%;
+    max-width:100%;
+    background:#333;
+    margin:0 auto;
+    padding:0 $fg-padding;
+    @include box-sizing(border-box);
+
+  }
+
+  header{
+   width:flex-grid(8);
+   background:#efefef;
+   height:20px;
+  }
+
+
+  .grid{
+    display:none;
+  }
+  .mobGrid{
+    display:block;
+    .col{
+      display:block;
+      height:50px;
+      width:flex-grid(1);
+      margin-right:flex-gutter(8);
+      float:left;
+      background:red;
+      &:last-child{
+        margin-right:0 !important;
+      }
+    }
+  }
+}
+
+$fg-column: 35px;             // Column Width
+$fg-gutter: 10px;             // Gutter Width
+$fg-padding: 10px;            // not apart of mixin
+$fg-max-columns:14;
+
+@include media-query-bp($bp3) {
+  #container{
+    width:100%;
+    background:#333;
+    margin:0 auto;
+    padding:0 $fg-padding;
+    @include box-sizing(border-box);
+
+  }
+
+  header{
+   width:flex-grid(14);
+   background:#efefef;
+   height:20px;
+  }
+
+  .mobGrid{
+    display:none;
+  }
+
+  .grid{
+    display:block;
+    .col{
+      display:block;
+      height:50px;
+      width:flex-grid(1);
+      margin-right:flex-gutter(14);
+      float:left;
+      background:red;
+      &:last-child{
+        margin-right:0 !important;
+      }
+    }
+  }
+}
+
+$fg-column: 42px;             // Column Width
+$fg-gutter: 10px;             // Gutter Width
+$fg-padding: 25px;            // not apart of mixin
+$fg-max-columns:14;
+
+@include media-query-bp($bp4) {
+  #container{
+    width:100%;
+    background:#333;
+    margin:0 auto;
+    padding:0 $fg-padding;
+    @include box-sizing(border-box);
+
+  }
+
+  header{
+   width:flex-grid(14);
+   background:#efefef;
+   height:20px;
+  }
+
+  .grid{
+    .col{
+      height:50px;
+      width:flex-grid(1);
+      margin-right:flex-gutter(14);
+      float:left;
+      background:red;
+      &:last-child{
+        margin-right:0;
+      }
+    }
+  }
+}
+
+
+$fg-column: 57px;             // Column Width
+$fg-gutter: 10px;             // Gutter Width
+$fg-padding: 16px;            // not apart of mixin
+$fg-max-columns:14;
+
+@include media-query-bp($bp5) {
+  #container{
+
+    background:#333;
+    margin:0 auto;
+    padding:0 $fg-padding;
+    @include box-sizing(border-box);
+
+  }
+
+  header{
+   width:flex-grid(14);
+   background:#efefef;
+   height:20px;
+  }
+
+  .grid{
+    .col{
+      height:50px;
+      width:flex-grid(1);
+      margin-right:flex-gutter(14);
+      float:left;
+      background:red;
+      &:last-child{
+        margin-right:0;
+      }
+    }
+
+  }
+
+}
+
+$fg-column: 69px;             // Column Width
+$fg-gutter: 10px;             // Gutter Width
+$fg-padding: 52px;            // not apart of mixin
+$fg-max-columns:14;
+
+@include media-query-bp($bp6) {
+
+  #container{
+    max-width:1200px;
+    background:#333;
+    margin:0 auto;
+    padding:0 $fg-padding;
+    @include box-sizing(border-box);
+
+  }
+
+  header{
+   width:flex-grid(14);
+   background:#efefef;
+   height:20px;
+  }
+
+  .grid{
+    .col{
+      height:50px;
+      width:flex-grid(1);
+      margin-right:flex-gutter(14);
+      float:left;
+      background:red;
+      &:last-child{
+        margin-right:0;
+      }
+    }
+
+  }
+
+
+}

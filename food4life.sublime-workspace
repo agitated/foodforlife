@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wi",
+				"width"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ve",
+				"vertical-align"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"col",
+				"colspan	Attr"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"border",
+				"border:none"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/_imports.scss",
+			"settings":
+			{
+				"buffer_size": 2583,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/partials/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 8208,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cagiasotis/Documents/projects/htdocs/surf-challenge/public/images/edm-promo-header.jpg",
+		"/Users/cagiasotis/Documents/projects/htdocs/surf-challenge/public/images/edm-footer-title-follow-original-sourc.gif",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_breakpoints.scss",
+		"/Users/cagiasotis/Documents/projects/00 - channel play/adserver-responsive.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">",
+			"<td class=\"video-item\">",
+			"<td class=\"video-item\" >",
+			"video-item",
+			"style=\"border:none;color:#333333\"",
+			"<a style=\"border:none;padding:3px;color:#333333\" href=\"#\">",
+			"video-thumb",
+			" <td style=\"border-right:1px #063349 solid;\">\n                      <a style=\"border:none\" href=\"#\"><img class=\"video-thumb\" src=\"images/edm-thumb-video.jpg\" width=\"180\" height=\"99\"></a>\n                    </td>",
+			"<td>",
+			" <td bgcolor=\"#efe6d6\" style=\"background:#efe6d6;\">",
+			"<td  bgcolor=\"#efe6d6\" style=\"background:#efe6d6;\">",
+			"style=\"border:none;padding:3px;color:#333333\"",
+			"<img class=\"video-thumb\" src=\"images/edm-thumb-video.jpg\">",
+			"61·7·5599·3800",
+			"edm_mobile_header.jpg",
+			"padding-bottom:5px",
+			"colspan=\"2\"",
+			"padding-right: 30px;",
+			"padding-left: 30px;",
+			"fff",
+			"container-padding",
+			".heroHomeBg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/_imports.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 620.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/partials/_mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3698.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "food4life.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
