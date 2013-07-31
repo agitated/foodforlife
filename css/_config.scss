@@ -64,6 +64,7 @@ $baselineheight 				: 1.5em;
 // 768px 	48em
 // 992px 	62em
 // 1382px	86.375em
+@import url(http://fonts.googleapis.com/css?family=Rochester|Trocchi);
 
 $bp1              : 320px;
 $bp2 							: 480px;
@@ -86,7 +87,7 @@ $no-mq-classname 				: ".lt-ie9";
 
 
 // Now define your design’s typography by setting a base typeface and size
-$basefontfamily 				: 'Open Sans', sans-serif;
+$basefontfamily 				: 'Trocchi', serif, sans-serif;
 $basefontsize 					: 16;
 
 
