@@ -28,6 +28,7 @@ color : $pagercolor; }
 
 .pager li > a:hover {
 text-decoration : none;
+color:$pagercolorhover ;
 background-color : $pagerbackgroundcolorhover;  }
 
 .pager .next > a,
