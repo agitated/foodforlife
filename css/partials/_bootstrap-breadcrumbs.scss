@@ -7,26 +7,41 @@
 .breadcrumb {
 list-style-type : none;
 margin : 0 0 $baselineheight;
-padding : $baselineheight / 2 $gutterwidth / 2;
+padding : $baselineheight/2 0;
 background-color : $breadcrumbbackgroundcolor;
 // @include breadcrumbgrad;
 border : $breadcrumbborderwidth $breadcrumbborderstyle $breadcrumbbordercolor;
 border-radius : $breadcrumbborderradius;
 @include font-size($breadcrumbfontsize);
 color : $breadcrumbcolor;
+text-shadow: 0px 0px 2px rgba( 69, 40, 13,0.55 );
 
 > li {
 display : inline-block;
-*display : inline; 
+*display : inline;
 *zoom : 1;
+padding-left:$gutterwidth;
+
+&:first-child{
+  padding-left:0;
+}
 
 a {
-color : $linkcolor; }
+color : $breadcrumbcolor;
+margin-right:$gutterwidth;
+}
+
+
 
 > .divider {
-color : $midneutralcolor; }
+color : $midneutralcolor;
+@include font-size($breadcrumbfontsize*2);
+display:inline-block;
+line-height:$breadcrumbdivlineheight  ;
+}
 }/*li*/
 
 > .active {
-color : $lightneutralcolor; }
+color : $breadcrumbcolor; }
 }/*breadcrumb*/
+

@@ -14,6 +14,7 @@ $fg-max-columns:8;
     margin:0 auto;
     padding:0 $fg-padding;
     @include box-sizing(border-box);
+    @include clearfix;
 
   }
 
@@ -26,6 +27,7 @@ $fg-max-columns:8;
 
   .grid{
     display:none;
+    @include clearfix;
   }
   .mobGrid{
     display:block;
@@ -40,6 +42,26 @@ $fg-max-columns:8;
         margin-right:0 !important;
       }
     }
+  }
+
+  .ingredientsbig{
+    display:block;
+    width:flex-grid(8);
+    height:300px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+    margin-bottom:10px;
+  }
+  .ingredients{
+    display:block;
+    width:flex-grid(8);
+    height:100px;
+    margin-right:0;
+    background:#999;
+    float:none;
+    clear:both;
+    margin-bottom:10px;
   }
 }
 
@@ -84,6 +106,26 @@ $fg-max-columns:8;
       }
     }
   }
+
+  .ingredientsbig{
+    display:block;
+    width:flex-grid(8);
+    height:300px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+    margin-bottom:10px;
+  }
+  .ingredients{
+    display:block;
+    width:flex-grid(8);
+    height:100px;
+    margin-right:0;
+    background:#999;
+    float:none;
+    clear:both;
+    margin-bottom:10px;
+  }
 }
 
 $fg-column: 35px;             // Column Width
@@ -98,7 +140,7 @@ $fg-max-columns:14;
     margin:0 auto;
     padding:0 $fg-padding;
     @include box-sizing(border-box);
-
+    @include clearfix;
   }
 
   header{
@@ -124,6 +166,24 @@ $fg-max-columns:14;
         margin-right:0 !important;
       }
     }
+  }
+
+  .ingredientsbig{
+    display:block;
+    width:flex-grid(5);
+    height:300px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+  }
+  .ingredients{
+    display:block;
+    width:flex-grid(5);
+    height:100px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+    margin-bottom:10px;
   }
 }
 
@@ -198,6 +258,24 @@ $fg-max-columns:14;
 
   }
 
+  .ingredientsbig{
+    display:block;
+    width:flex-grid(5);
+    height:300px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+  }
+  .ingredients{
+    display:block;
+    width:flex-grid(5);
+    height:100px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+    margin-bottom:10px;
+  }
+
 }
 
 $fg-column: 69px;             // Column Width
@@ -213,6 +291,7 @@ $fg-max-columns:14;
     margin:0 auto;
     padding:0 $fg-padding;
     @include box-sizing(border-box);
+    @include clearfix;
 
   }
 
@@ -235,6 +314,25 @@ $fg-max-columns:14;
     }
 
   }
+
+  .ingredientsbig{
+    display:block;
+    width:flex-grid(5);
+    height:300px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+  }
+  .ingredients{
+    display:block;
+    width:flex-grid(5);
+    height:100px;
+    margin-right:flex-gutter();
+    background:#999;
+    float:left;
+    margin-bottom:10px;
+  }
+
 
 
 }

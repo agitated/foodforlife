@@ -34,7 +34,7 @@
 // Start the ‘atmosphere’ of your design by defining the colours of your pages and text
 
 $bodycolor 						: rgb(255,255,255);
-$textcolor 						: rgb(71,63,63);
+$textcolor 						: rgb(51,51,51);
 
 
 
@@ -43,8 +43,8 @@ $textcolor 						: rgb(71,63,63);
 // Next are two variables that will be used throughout your design;
 // $gutterwidth for horizontal spacing and $baselineheight for vertical rhythm
 
-$gutterwidth 					: 24px;
-$baselineheight 				: 1.5em;
+$gutterwidth 					: 24px;     //this will change with flex-grid
+$baselineheight 			: 1.5em;    //?
 
 
 
@@ -87,8 +87,13 @@ $no-mq-classname 				: ".lt-ie9";
 
 
 // Now define your design’s typography by setting a base typeface and size
+<<<<<<< HEAD
 $basefontfamily 				: 'Trocchi', serif, sans-serif;
 $basefontsize 					: 16;
+=======
+$basefontfamily 				: 'Open Sans', sans-serif;
+$basefontsize 					: 15;
+>>>>>>> caf02b56744ae8c5c2ed9f4926e6cdbc9091641b
 
 
 // Your headings may inherit the base typeface, or you may set a different font stack
@@ -116,32 +121,35 @@ $codefont 						: Monaco, Courier New, monospace;
 
 
 // Define your design’s palette by choosing three main colours
-$primarycolor 					: rgb(146,154,0);
-$secondarycolor 				: rgb(164,50,21);
-$tertiarycolor 					: rgb(41,47,54);
+$primarycolor 					: rgb(113,212,76);                  // green - border links and buttons
+$secondarycolor 				: rgb(225,38,28);                   // red highlight
+$tertiarycolor 					: rgb(20,63,135);                   // blue
 
 // Now set a neutral colour for borders etc.
-$neutralcolor 					: rgb(71,63,63);
-$midneutralcolor 				: darken($neutralcolor,25%);
-$darkneutralcolor 				: darken($neutralcolor,50%);
-$lightneutralcolor 				: lighten($neutralcolor,25%);
-$lighterneutralcolor 			: lighten($neutralcolor,50%);
-$lightestneutralcolor 			: lighten($neutralcolor,70%);
+$neutralcolor 					: rgb(239,238,236);                 // used behind content in thumbs and hero
+$midneutralcolor 				: rgb(230,226,218);                 // used in headings in footer and hover in nav
+$darkneutralcolor 			: rgb(167,160,137);                 // Used for links in nav menu
+$lightneutralcolor 			: rgb(244,243,242);                 // used behine navigation in header
+$lighterneutralcolor 		: lighten($neutralcolor,50%);
+$lightestneutralcolor 	: lighten($neutralcolor,70%);
 
 // Sometimes you may want $black and $white to be ‘almost black’ and ’off-white’
-$black 							: rgb(0,0,0);
-$white 							: rgb(255,255,255);
+$black 							    : rgb(0,0,0);
+$white 							    : rgb(255,255,255);
 
 // Choose a colour for your hyperlinks. Often this will be the $primarycolor
-$linkcolor 		    			: $primarycolor;
-$linkcolorhover 				: darken($linkcolor, 10);
-$linkcolorvisited   			: darken($linkcolorhover, 10);
+$linkcolor 		    			: $textcolor;
+$linkcolorhover 				: $primarycolor;
+$linkcolorvisited   		: $textcolor;
 $linkcolorfocus 				: darken($linkcolorvisited, 10);
+$linkbordercolor        : $secondarycolor;
+$linkborderstyle        : solid;
+$linkborderwidth        : 1px;
 
 // Now define another set of colours. These will be used to style alerts and buttons
 $alertcolor 					: rgb(218,79,73);
 $errorcolor 					: rgb(176,20,0);
-$infocolor 						: rgb(216,220,162);
+$infocolor 						: $neutralcolor;
 $inversecolor 					: rgb(65,65,65);
 $successcolor 					: rgb(188,212,222);
 $warningcolor 					: $errorcolor;
@@ -155,10 +163,10 @@ $warningcolor 					: $errorcolor;
 // Next set variables for your design’s borders.
 // These will be inherited by many Rock Hammer elements below
 
-$bordercolor    				: $lighterneutralcolor;
+$bordercolor    			: $midneutralcolor;
 $borderstyle					: solid;
 $borderwidth 					: 1px;
-$borderradius 					: 4px;
+$borderradius 				: 4px;
 
 
 
@@ -206,7 +214,7 @@ $basefontbackgroundcolor		: $lightestneutralcolor;
 // By default site navigation has a flat background colour
 // Add an optional gradient in __navigation-toggle.scss
 // Configure the gradient colours in _texture.scss
-$navigationbackgroundcolor 		: $tertiarycolor;
+$navigationbackgroundcolor 		: $lightneutralcolor;
 
 // Set navigation items’ bottom border width
 $navigationborderwidth			: $borderwidth;
@@ -215,13 +223,13 @@ $navigationborderwidth			: $borderwidth;
 $navigationborderstyle			: $borderstyle;
 
 // Set navigation items’ bottom border colour
-$navigationbordercolor 			: darken($navigationbackgroundcolor,10%);
+$navigationbordercolor 			: $midneutralcolor;
 
 // Set navigation items’ link colours
-$navigationlinkcolor			: $white;
+$navigationlinkcolor			: $darkneutralcolor;
 
 // :hover
-$navigationlinkcolorhover		: darken($navigationlinkcolor,10%);
+$navigationlinkcolorhover		: $midneutralcolor;
 
 
 
@@ -230,45 +238,45 @@ $navigationlinkcolorhover		: darken($navigationlinkcolor,10%);
 // =navbar ============
 
 // Set navbar’s min-height
-$navbarheight					: 44px;
+$navbarheight					: 49px;
 
 // By default Navbars have a flat background colour
 // Add an optional gradient in _bootstrap-navbar.scss
 // Configure the gradient colours in _texture.scss
-$navbarbackgroundcolor			: lighten($neutralcolor,75%);
+$navbarbackgroundcolor			: $lightneutralcolor;
 
 // Set navbar’s border width
-$navbarborderwidth				: $borderwidth * 2;
+$navbarborderwidth				: $borderwidth;
 
 // Set navbar’s’ border style
 $navbarborderstyle				: $borderstyle;
 
 // By default navbar’s border is a tint of $navbarbackgroundcolor. Adjust percentage as required
-$navbarbordercolor 				: darken($navbarbackgroundcolor,10%);
+$navbarbordercolor 				: $midneutralcolor;
 
 // Set navbar’s border radius. Default is $borderradius defined above
-$navbarborderradius				: $borderradius;
+$navbarborderradius				: 0px;
 
 // Set navbar’s text colour
-$navbarcolor					: $textcolor;
+$navbarcolor					: rgb(167,160,137);
 
 // Set navbar’s brand colour
 $navbarbrandcolor				: $primarycolor;
 
 // Set navbar’s link colours
-$navbarlinkcolor				: $linkcolor;
+$navbarlinkcolor				: $midneutralcolor;
 
 // :hover
-$navbarlinkbackgroundcolorhover : rgba($navbarlinkcolor,.25);
-$navbarlinkcolorhover			: $textcolor;
+$navbarlinkbackgroundcolorhover : rgb(34,37,34);
+$navbarlinkcolorhover			: $midneutralcolor;
 
 // :hover
-$navbarlinkbackgroundcoloractive: $primarycolor;
-$navbarlinkcoloractive			: $white;
+$navbarlinkbackgroundcoloractive: rgb(34,37,34);
+$navbarlinkcoloractive			: $midneutralcolor;
 
 // Set navbar’s divider colour
-$navbardividerleft				: $navbarbordercolor;
-$navbardividerright				: lighten($navbarbordercolor,10%);
+$navbardividerleft				: $bordercolor;
+$navbardividerright				: $bordercolor;
 
 
 
@@ -279,13 +287,13 @@ $navbardividerright				: lighten($navbarbordercolor,10%);
 // By default breadcrumbs have a flat background colour
 // Add an optional gradient in _bootstrap-breadcrumbs.scss
 // Configure the gradient colours in _texture.scss
-$breadcrumbbackgroundcolor 		: lighten($neutralcolor, 75%);
+$breadcrumbbackgroundcolor 		: transparent;
 
 // Set the breadcrumbs’ border width
-$breadcrumbborderwidth 			: $borderwidth;
+$breadcrumbborderwidth 			: 0px;
 
 // By breadcrumbs’ border is a tint of $breadcrumbbackgroundcolor. Adjust percentage as required
-$breadcrumbbordercolor			: darken($breadcrumbbackgroundcolor, 5%);
+$breadcrumbbordercolor			: transparent;
 
 // Set the breadcrumbs’ border style
 $breadcrumbborderstyle 			: $borderstyle;
@@ -296,21 +304,21 @@ $breadcrumbborderstyle 			: $borderstyle;
 $breadcrumbfontsize 			: $basefontsize;
 
 // Set the breadcrumbs’ text colour
-$breadcrumbcolor				: darken($breadcrumbbackgroundcolor, 40%);
+$breadcrumbcolor				: $white;
 
 // Set the default alert’s border radius. Default is $borderradius defined above
 $breadcrumbborderradius			: $borderradius;
-
+$breadcrumbdivlineheight    : 0.5em;
 
 
 
 
 // =pagination ============
 
-$paginationpadding					: 4px 11px;
+$paginationpadding					: 5px 15px;
 
 // Set pagination font-family. Default is $altfontfamily defined above
-$paginationfontfamily 				: $altfontfamily;
+$paginationfontfamily 				: $basefontfamily;
 
 // By default pagers have a default flat background colour
 // Add an optional gradient in _bootstrap-pagination.scss
@@ -334,12 +342,12 @@ $paginationendbackgroundcolor 		: $lightestneutralcolor;
 $paginationendcolor					: $textcolor;
 
 // :hover
-$paginationbackgroundcolorhover 	: $lightestneutralcolor;
-$paginationlinkcolorhover			: $textcolor;
+$paginationbackgroundcolorhover 	: rgb(34,37,34);
+$paginationlinkcolorhover			: $midneutralcolor;
 
 // :active
-$paginationbackgroundcoloractive 	: $primarycolor;
-$paginationlinkcoloractive			: $white;
+$paginationbackgroundcoloractive 	: rgb(34,37,34);
+$paginationlinkcoloractive			: $midneutralcolor;
 
 
 
@@ -347,35 +355,35 @@ $paginationlinkcoloractive			: $white;
 
 // =pager ============
 
-$pagerpadding					: 4px 11px;
+$pagerpadding					: 8px 15px;
 
 // By default pagers have a default flat background colour
 // Add an optional gradient in _bootstrap-pager.scss
 // Configure the gradient colours in _texture.scss
-$pagerbackgroundcolor 			: $bodycolor;
+$pagerbackgroundcolor 			: $primarycolor;
 
 // :hover
-$pagerbackgroundcolorhover		: darken($pagerbackgroundcolor, 10%);
+$pagerbackgroundcolorhover		: $white;
 
 // Set pager’s border width
-$pagerborderwidth 				: $borderwidth;
+$pagerborderwidth 				: 0px;
 
 // And pager’s border style
 $pagerborderstyle 				: $borderstyle;
 
 // By default colour is a tint of background colour. Adjust percentage as required
-$pagerbordercolor 				: darken($pagerbackgroundcolor, 20%);
+$pagerbordercolor 				: transparent;
 
 // Set pager’s border radius. Default is $borderradius defined above
 $pagerborderradius				: $borderradius;
 
 // Set pager’s font-family. Default is $basefontfamily defined above
-$pagerfontfamily 				: $altfontfamily;
+$pagerfontfamily 				: $basefontfamily;
 
 // By default colour is a tint of background colour. Adjust percentage as required
-$pagercolor						: $linkcolor;
+$pagercolor						: $white;
 
-
+$pagercolorhover      : $primarycolor;
 
 
 
@@ -575,25 +583,25 @@ $buttonpadding 					: 6px 11px;
 // Buttons have a default flat background colour
 // Add an optional gradient in _bootstrap-form-buttons.scss
 // Configure the gradient colours in _texture.scss
-$buttonbackgroundcolor 			: $lightestneutralcolor;
+$buttonbackgroundcolor 			: $primarycolor;
 
 // Set the default button’s border width. Default is $borderwidth defined above
-$buttonborderwidth				: $borderwidth;
+$buttonborderwidth				: 0px;
 
 // Set the default button’s border style
 $buttonborderstyle				: $borderstyle;
 
 // By default border colour is a tint of background colour. Adjust percentage as required
-$buttonbordercolor 				: darken($buttonbackgroundcolor,10%);
+$buttonbordercolor 				: transparent;
 
 // Sometimes you may want a darker bottom border to suggest three-dimensions
-$buttonbottombordercolor 		: darken($buttonbordercolor, 5%);
+$buttonbottombordercolor 		: transparent;
 
 // Set the default button’s border radius. Default is $borderradius defined above
 $buttonborderradius				: $borderradius;
 
 // Set the button’s font-family. Default is $basefontfamily defined above
-$buttonfontfamily 				: $basefontfamily;
+$buttonfontfamily 				: $baseheadingfont;
 
 // Set the button’s font-size.
 // Use only a number. Units (em/px/%) are not required
@@ -603,7 +611,7 @@ $buttonfontsize 				: $basefontsize;
 // Set the default button’s text colour
 // Colours for :hover and :active  are derived automatically from $buttoncolor
 // Override colours for :hover and :active in _bootstrap-form-buttons.scss
-$buttoncolor 					: $lightneutralcolor;
+$buttoncolor 					: $white;
 
 
 
@@ -613,7 +621,7 @@ $buttoncolor 					: $lightneutralcolor;
 
 
 // Set the primary action button’s border and text colours
-$buttonbordercolorprimary		: darken($primarycolor, 10%);
+$buttonbordercolorprimary		: $primarycolor;
 $buttoncolorprimary				: $white;
 
 
